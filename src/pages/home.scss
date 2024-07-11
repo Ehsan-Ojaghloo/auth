@@ -1,0 +1,53 @@
+section.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100dvh;
+
+  .welcome-message {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #111;
+    padding: 5rem 3rem;
+    color: #d6efd8;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      width: 420px;
+      font-size: 1.2rem;
+      line-height: 2rem;
+      text-align: left;
+    }
+
+    a {
+      width: max-content;
+      color: #d6efd8;
+      font-family: roboto;
+      position: relative;
+      padding: 0.5rem 0;
+    }
+
+    a .line{
+      transition: all linear 0.3s;
+    }
+    
+    a:hover .line{
+      width: 100%;
+    }
+
+    .line {
+      position: absolute;
+      width: 5px;
+      height: 1px;
+      left: 0;
+      bottom: -0.1rem;
+      background-color: #d6efd8;
+    }
+  }
+}
